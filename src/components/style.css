@@ -1,0 +1,57 @@
+.app-navbar {
+    height: 300px;
+    background: url('../assets/header_bg.png') no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+}
+.header-left-column {
+    height: 300px;
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-right-column {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.heder-buttons {
+    display: flex;
+}
+
+.event-time {
+    display: flex;
+    width: 20%;
+}
+.event-desc {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.event-delete {
+    display: flex;
+    width: 10%;
+    justify-content: flex-end;
+}
+
+@media (max-width:768px) {
+    .header-right-column {
+        display: none;
+    }
+
+    .header-left-column {
+        text-align: center;
+    }
+
+    .header-left-column h6 {
+        font-size: 2rem;
+    }
+}
