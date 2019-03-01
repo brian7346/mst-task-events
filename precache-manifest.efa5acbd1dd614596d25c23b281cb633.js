@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/mst-task-events/static/js/runtime~main.1ee740d4.js"
   },
   {
-    "revision": "921e224afb91fe212bcb",
-    "url": "/mst-task-events/static/js/main.921e224a.chunk.js"
+    "revision": "407635e3ee9213ee0cad",
+    "url": "/mst-task-events/static/js/main.407635e3.chunk.js"
   },
   {
     "revision": "b9351f79e3d00acf68ca",
     "url": "/mst-task-events/static/js/1.b9351f79.chunk.js"
   },
   {
-    "revision": "921e224afb91fe212bcb",
+    "revision": "407635e3ee9213ee0cad",
     "url": "/mst-task-events/static/css/main.17dfa06e.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/mst-task-events/static/css/1.51db8e4d.chunk.css"
   },
   {
-    "revision": "eddb80dfea3b2690a2c7b7afd12e8d08",
+    "revision": "ed6309985c5d3371c91085e6719947ed",
     "url": "/mst-task-events/index.html"
   }
 ];
