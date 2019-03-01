@@ -18,8 +18,8 @@ class ShoppingList extends Component {
     this.props.deleteEvent(id)
   };
 
-  toggleHover = id =>{
-    this.setState({hover: !this.state.hover, hoverId: id})
+  toggleHover = (id, hover) =>{
+    this.setState({hover, hoverId: id})
   }
   render() {
     const { events } = this.props.event;
@@ -33,8 +33,8 @@ class ShoppingList extends Component {
                 <CSSTransition key={_id} timeout={500} classNames="fade">
                   <ListGroupItem 
                     className="event-item"
-                    onMouseEnter={() => this.toggleHover(_id)} 
-                    onMouseLeave={this.toggleHover}
+                    onMouseEnter={() => this.toggleHover(_id, true)} 
+                    onMouseLeave={() => this.toggleHover(null, false)}
                     style={{
                       margin: '10px auto',
                       border: 'none',
