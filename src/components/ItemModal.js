@@ -82,7 +82,6 @@ class ItemModal extends Component {
   }
 
   onBlur = e => {
-    const { eventTime } = this.state;
     switch(e.target.name){
       case 'name':
         if(e.target.value === '') {
@@ -98,8 +97,7 @@ class ItemModal extends Component {
   }
   render() {
     const { modalHandler } = this.props;
-    const { 
-      onFocus, 
+    const {
       nameInvalid,
       descriptionInvalid
     } = this.state;
