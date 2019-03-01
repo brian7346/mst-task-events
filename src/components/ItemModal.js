@@ -46,16 +46,17 @@ class ItemModal extends Component {
     } = this.state;
 
     if(name !== ''){
-      const newItem = {
+      const newEvent = {
         name,
         eventTime: eventTime ? eventTime.format('HH:mm') : moment().format('HH:mm'),
         eventDescription,
         eventImportant,
         _id: uuid()
       };
+
+      this.props.saveEvent(newEvent)
   
-      this.props.dispatch(addEvent(newItem))
-      // this.props.addItem(newItem);
+      // this.props.dispatch(addEvent(newEvent))
   
       this.toggle();
       this.setState({
@@ -136,7 +137,7 @@ class ItemModal extends Component {
                 // placeholder="Время"
                 showSecond={false} 
                 onChange={this.timeChanged}
-              />
+              /> <span style={{color: '#495057'}}>Время начала</span>
             </FormGroup>
             <FormGroup>
               <Input 
@@ -153,7 +154,7 @@ class ItemModal extends Component {
                   type="checkbox" 
                   name="eventImportant"
                   onChange={this.checkBoxChange}
-                /> Важное событие
+                /> Пометить событие как важное
               </Label>
             </FormGroup>
             <FormGroup>

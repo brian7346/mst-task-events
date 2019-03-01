@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, ListGroup, ListGroupItem, Button, Col } from "reactstrap";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { connect } from "react-redux";
-import { getItems, deleteItem } from "../actions/itemAction";
+import { deleteEvent } from "../actions/eventsActions";
 import PropTypes from "prop-types";
 
 class ShoppingList extends Component {
@@ -10,8 +10,12 @@ class ShoppingList extends Component {
     hover: false,
   }
 
-  onDeleteClick = id => {
-    this.props.deleteItem(id);
+  deleteEvent = id => {
+    // const { dispatch } = this.props;
+
+    // dispatch(deleteEvent(id))
+
+    this.props.deleteEvent(id)
   };
 
   toggleHover = id =>{
@@ -48,7 +52,7 @@ class ShoppingList extends Component {
                    <p>{eventDescription}</p>
                    </div>
                    <div className='event-delete'>
-                     <h6 style={{cursor: 'pointer'}}>X</h6>
+                     <h6 onClick={() => this.deleteEvent(_id)} style={{cursor: 'pointer'}}>X</h6>
                    </div>
                   </ListGroupItem>
                 </CSSTransition>
@@ -62,7 +66,7 @@ class ShoppingList extends Component {
 }
 
 ShoppingList.propTypes = {
-  getItems: PropTypes.func.isRequired,
+  // getItems: PropTypes.func.isRequired,
   item: PropTypes.object.isRequired,
   event: PropTypes.object.isRequired
 };
@@ -74,5 +78,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getItems, deleteItem }
+  dispatch => ({dispatch})
 )(ShoppingList);

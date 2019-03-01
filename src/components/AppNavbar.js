@@ -38,10 +38,14 @@ class AppNavbar extends Component {
                 >
                   Событие +
                 </Button>
-                <Button style={{
-                  background: 'transparent',
-                  border: '1px solid #a9d85f'
-                }}>Обновить</Button>
+                <Button 
+                  onClick={() => window.location.reload()}
+                  style={{
+                    background: 'transparent',
+                    border: '1px solid #a9d85f'
+                  }}>
+                  Обновить
+                </Button>
               </div>
             </div>
             <div className="header-right-column">

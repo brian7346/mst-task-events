@@ -36,6 +36,12 @@
     flex-direction: column;
 }
 
+.event-desc p {
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
 .event-delete {
     display: flex;
     width: 10%;
