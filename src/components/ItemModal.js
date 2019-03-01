@@ -8,10 +8,7 @@ import {
   FormGroup,
   Label,
   Input,
-  Container,
   FormFeedback,
-  Row,
-  Col
 } from "reactstrap";
 import TimePicker from 'rc-time-picker';
 import { connect } from "react-redux";
@@ -20,7 +17,6 @@ import moment from 'moment';
 import 'rc-time-picker/assets/index.css';
 
 import { handleAddModal } from "../actions/modalActions";
-import { addEvent } from "../actions/eventsActions";
 
 class ItemModal extends Component {
   state = {

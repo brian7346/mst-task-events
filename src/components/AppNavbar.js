@@ -1,17 +1,8 @@
 import React, { Component } from "react";
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
   Button,
   Container
 } from "reactstrap";
-
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import{ handleAddModal } from '../actions/modalActions'

@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { config } from './config/config';
 import firebase from 'firebase';
-import { Provider, connect } from "react-redux";
+import { Provider } from "react-redux";
 import store from "./store";
 
 import { addEvent, deleteEvent } from './actions/eventsActions'

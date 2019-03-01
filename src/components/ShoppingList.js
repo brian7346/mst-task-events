@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Container, ListGroup, ListGroupItem, Button, Col } from "reactstrap";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { connect } from "react-redux";
-import { deleteEvent } from "../actions/eventsActions";
 import PropTypes from "prop-types";
 
 class ShoppingList extends Component {
@@ -11,10 +10,6 @@ class ShoppingList extends Component {
   }
 
   deleteEvent = id => {
-    // const { dispatch } = this.props;
-
-    // dispatch(deleteEvent(id))
-
     this.props.deleteEvent(id)
   };
 
