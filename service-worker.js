@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/mst-task-events/precache-manifest.6bb33ca46507b251c8fb7154f11e7e34.js"
+  "/react-firebase-events-editor/precache-manifest.3c9be42a41986bb81b3ae8c0ba515c73.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/mst-task-events/index.html", {
+workbox.routing.registerNavigationRoute("/react-firebase-events-editor/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
