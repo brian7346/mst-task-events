@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://brian7346.github.io/mst-task-events",
+  "homepage": "https://brian7346.github.io/react-firebase-events-editor",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
